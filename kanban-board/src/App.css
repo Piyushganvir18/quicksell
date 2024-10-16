@@ -1,0 +1,243 @@
+/* General Styles */
+.App {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #d8d8d8; 
+  color: #333; 
+  line-height: 1.5; 
+  font-size: 14px; /* Adjusted font size for general text */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 15px 20px;
+  background-color: #ffffff; 
+  box-shadow: 0 2px 5px rgba(102, 102, 102, 0.1); 
+  border-radius: 8px; 
+}
+
+/* Controls Styles */
+.controls {
+  display: flex;
+  gap: 15px; 
+}
+
+.controls button {
+  padding: 5px 8px;
+  border: none; 
+  border-radius: 5px; 
+  background-color: #007bff; 
+  color: white; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  font-size: 12px; /* Smaller font size for buttons */
+}
+
+.controls button:hover {
+  background-color: #0056b3; 
+}
+
+/* Board Styles */
+.board {
+  display: flex;
+  justify-content: space-around; 
+  padding: 18px;
+  gap: 18px; 
+}
+
+/* Group Styles */
+.group {
+  width: 30%; 
+  background: #d8d8d8; 
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+/* Card Styles */
+.card {
+  background: #ffffff; 
+  padding: 12px;
+  margin: 10px 0; 
+  border: 1px solid #d8d8d8; 
+  border-radius: 5px; 
+  transition: box-shadow 0.3s; 
+  font-size: 14px; /* Smaller font size for cards */
+}
+
+.card:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Priority Styles */
+.card.priority-4 {
+  border-left: 5px solid #797979; 
+}
+
+.card.priority-3 {
+  border-left: 5px solid #3f3f3f; 
+}
+
+.card.priority-2 {
+  border-left: 5px solid #3f3f3f; 
+}
+
+.card.priority-1 {
+  border-left: 5px solid #3f3f3f; 
+}
+
+.card.priority-0 {
+  border-left: 5px solid #3f3f3f; 
+}
+
+/* Dropdown Styles */
+.header {
+  position: relative; 
+}
+
+.dropdown-content {
+  position: absolute; 
+  top: 100%; 
+  left: 0;
+  background-color: #ffffff; 
+  border: 1px solid #ffffff;
+  padding: 10px;
+  z-index: 1;
+  margin-top: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  border-radius: 5px; 
+}
+
+.grouping,
+.sorting {
+  margin-bottom: 10px; 
+}
+
+label {
+  margin-right: 5px; 
+  font-size: 14px; /* Smaller font size for labels */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .group {
+    width: 90%; 
+  }
+}
+
+.feature-request-button {
+  margin-top: 10px; 
+  padding: 8px 12px; 
+  border: none; 
+  border-radius: 10px; 
+  background-color: #f0f0f0; 
+  color: #141414; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  font-size: 14px; /* Smaller font size for feature request button */
+}
+
+.feature-request-button:hover {
+  background-color: #b3b3b3; 
+}
+
+.feature-details {
+  margin-top: 10px; 
+  padding: 10px;
+  background-color: #f9f9f9; 
+  border: 1px solid #e0e0e0; 
+}
+
+.display-dropdown {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light background for dropdown */
+  font-size: 14px; /* Smaller font size for dropdown */
+}
+
+.dropdown-content {
+  position: absolute; /* Adjust position */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.grouping, .sorting {
+  margin-bottom: 10px;
+}
+
+.header {
+  padding: 16px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjusts spacing between controls */
+}
+
+.display-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 21px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.display-dropdown:hover {
+  background-color: #f0f0f0;
+}
+
+.icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  margin-right: 5px; /* Space between icon and text */
+  fill: #5C5C5E; /* Icon color */
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 50px; /* Adjust based on your layout */
+  left: 0;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.grouping,
+.sorting {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 8px; /* Space between label and select */
+}
+
+select {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Smaller font size for select */
+}
